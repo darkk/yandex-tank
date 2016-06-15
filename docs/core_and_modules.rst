@@ -181,7 +181,7 @@ Additional options
 
 :port (deprecated, use ``address``):
   Port of target.
-
+e
   Default: ``80``.
 
 :gatling_ip:
@@ -952,21 +952,21 @@ Advanced criteria types
 
   Example: ``negative_http(2xx,10%,10s)``. 
 
-  Exit code: 28
+  Exit code - 28
 
 :negative_net: 
   Inversed ``total_net``. Stop if there are not enough responses that fit the specified mask. 
 
   Example: ``negative_net(0,10%,10s)``. 
 
-  Exit code: 29
+  Exit code - 29
 
 :http_trend: 
   Stop if trend for defined http codes is negative on defined period. Trend is a sum of an average coefficient for linear functions calculated for each pair points in last n seconds and standart deviation for it
 
   Example: http_trend(2xx,10s). 
 
-  Exit code: 30. 
+  Exit code - 30. 
 
 Monitoring
 ==========
